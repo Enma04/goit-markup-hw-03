@@ -7,6 +7,44 @@
     --black-color: #212121;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* Estilos para poner a cero la sangría superior de los elementos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Propiedades para la correcta visualización de las imágenes */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Propiedad para anular la cursiva en address */
+address {
+    font-style: inherit;
+    /*
+        También se puede poner así:
+        font-style: normal;
+    */ 
+}
+
 body{
     color: var(--black-color);
     font-family: 'Roboto', sans-serif;
@@ -16,10 +54,31 @@ body{
     padding: 0;
 }
 
+
+
+
+/* BLOQUE CONTENEDOR */
 .container{
     
 }
 
+
+
+/* Clase para restablecer las propiedades básicas de las listas (ul) */
+.list {
+    list-style: none;
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Clase para restablecer las propiedades básicas de los enlaces */
+.link {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
 
 
 
@@ -44,18 +103,11 @@ nav{
 }
 
 /* Webstudio */
-
 .web-studio{
-    list-style-type: none;
     margin-left: 145px;
-    text-decoration: none;
     color: var(--blue-color);
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
-}
-
-.navegation-list {
-    list-style-type: none;
 }
 
 .navegation-list>li {
@@ -63,20 +115,10 @@ nav{
     margin-left: 50px;
 }
 
-.navegation-info>li {
-    display: inline;
-    margin-right: 50px;
-}
-
-.navegation-list .navegation-links {
-    outline: none;
-    text-decoration: none;
-    color: var(--black-color);
-}
-
 .navegation-links {
     font-size: 14px;
     font-weight: 500;
+    color: var(--black-color);
 }
 
 .navegation-links:hover,
@@ -87,20 +129,17 @@ nav{
 .pag-active {
     font-size: 14px;
     font-weight: 500;
-    outline: none;
-    text-decoration: none;
     color: var(--blue-color);
 }
 
 .navegation-info>li {
-    list-style-type: none;
+    display: inline;
+    margin-right: 50px;
 }
 
 .navegation-info>li>a {
     font-size: 14px;
     font-weight: 500;
-    outline: none;
-    text-decoration: none;
     color: var(--text-gray);
 }
 
@@ -124,26 +163,14 @@ nav{
 }
 
 .web-studio-footer {
-    list-style-type: none;
-    text-decoration: none;
     color: var(--blue-color);
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
 }
 
-.info-footer{
-    padding: 0;
-}
-
-.info-footer>li {
-    list-style-type: none;
-}
-
 .info-footer>li>a {
-    outline: none;
     font-size: 14px;
     font-weight: 400;
-    text-decoration: none;
     color: #8f8b8b;
 }
 
@@ -169,7 +196,7 @@ nav{
 }
 
 .title-h1 {
-    font-size: 40px;
+    font-size: 44px;
     font-weight: 900;
 }
 
@@ -182,6 +209,7 @@ nav{
     border: none;
     padding: 15px;
     border-radius: 4px;
+    margin-top: 30px;
 }
 
 .boton1:hover, .boton1:focus{
@@ -194,7 +222,6 @@ nav{
 }
 
 .list-about-us{
-    list-style-type: none;
     display: flex;
 }
 
@@ -207,9 +234,6 @@ nav{
 
 .list-about-us>li>h3 {
     text-align: center;
-}
-
-.list-about-us>li>h3 {
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -221,7 +245,6 @@ nav{
 
 .sec-3{
     text-align: center;
-    padding-right: 50px;
     margin-bottom: 94px;
 }
 
@@ -233,14 +256,13 @@ nav{
     margin-bottom: 50px;
 }
 
-.img-list>li{
-    display: inline;
-    margin-left: 30px;
+.img-list{
+    display:flex;
+    justify-content: center;
 }
 
-.img-list,
-.our-team-list {
-    list-style-type: none;
+.img-list>li{
+    margin-left: 30px;
 }
 
 .sec-4{
@@ -259,7 +281,6 @@ nav{
 .our-team-list{
     display: flex;
     justify-content: center;
-    margin-right: 70px;
 }
 
 .our-team-list>li{
@@ -294,7 +315,6 @@ nav{
 }
 
 .buttons-list>li {
-    list-style-type: none;
     margin-left: 8px;
 }
 
@@ -331,10 +351,6 @@ nav{
     display: inline;
     flex-basis: calc((100% - 60px) / 3);
     border: 1px solid #EEEEEE;
-}
-
-.img-services>img{
-    max-width: 100%;
 }
 
 .services-list>li>h3 {
