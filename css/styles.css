@@ -39,6 +39,7 @@ img {
 /* Propiedad para anular la cursiva en address */
 address {
     font-style: inherit;
+    margin-top: 9px;
     /*
         También se puede poner así:
         font-style: normal;
@@ -81,7 +82,6 @@ body{
 /* Clase para restablecer las propiedades básicas de los enlaces */
 .link {
     text-decoration: none;
-    outline: none;
     color: inherit;
 }
 
@@ -91,8 +91,6 @@ body{
 
 .section-1-header{
     display:flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
     border-bottom: 1px solid #a5a1a15b;
 }
 
@@ -101,37 +99,34 @@ body{
 
 /* NAVEGATION BAR */
 
+nav{
+    display: flex;
+}
+
 .linea{
     display: flex;
 }
 
 /* Webstudio */
 .web-studio{
+    display: block;
+    padding: 30px 0px;
     color: var(--blue-color);
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 .navegation-list{
-    display: inline;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
+    display: flex;
     margin-left: 93px;
 }
 
-.navegation-list>li {
-    display: inline;
-}
-
 .navegation-links {
+    display: block;
     font-size: 14px;
     font-weight: 500;
     color: var(--black-color);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 30px 0px;
     margin-left: 50px;
 }
 
@@ -147,23 +142,16 @@ body{
 }
 
 .navegation-info{
-    display: inline;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
+    display: flex;
     margin-left: 200px;
 }
 
-.navegation-info>li {
-    display: inline;
-}
-
 .navegation-info>li>a {
+    display: block;
     font-size: 14px;
     font-weight: 500;
     color: var(--text-gray);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 30px 0px;
     margin-left: 50px;
 }
 
@@ -191,10 +179,18 @@ body{
     font-size: 26px;
 }
 
+.info-footer{
+    margin-top: 5px;
+}
+
 .info-footer>li>a {
     font-size: 14px;
     font-weight: 400;
     color: #8f8b8b;
+}
+
+.info-footer>li>a:first-child{
+    margin-bottom: 5px;
 }
 
 .info-footer>li>a:hover,
@@ -210,7 +206,6 @@ body{
 /* PAGE 1: index.html */
 
 .sec-1{
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -254,6 +249,9 @@ body{
     display: inline;
     width: 270px;
     padding: 10px;
+}
+
+.about-us-li{
     margin-left: 30px;
 }
 
@@ -291,6 +289,10 @@ body{
     margin-left: 30px;
 }
 
+.img-list>li:first-child{
+    margin-left: 0px;
+}
+
 .sec-4{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -313,6 +315,11 @@ body{
     margin-left: 37px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    border: 1.5px dotted green;
+}
+
+.our-team-list>li:first-child{
+    margin-left: 0px;
 }
 
 .our-team-list>li>h3{
@@ -348,7 +355,7 @@ body{
 }
 
 .filter-buttons {
-    padding: 10px;
+    padding: 6px 18px;
     font-size: 16px;
     font-weight: 500;
     font-family: inherit;
@@ -370,7 +377,6 @@ body{
     gap: 30px;
     margin-top: 50px;
     padding-bottom: 82px;
-    
 }
 
 .img-services {
@@ -381,20 +387,20 @@ body{
     border: 1px solid #EEEEEE;
 }
 
-.services-list>li>h3 {
+.cont-img-services{
+    padding: 20px 24px;
+}
+
+.img-services-h3 {
     font-size: 18px;
     font-weight: 700;
     text-align:left;
-    margin-left: 24px;
-    padding-top: 20px;
-    padding-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 .services-list>li>p {
     font-size: 16px;
     color: var(--text-gray);
     text-align:left;
-    margin-left: 24px;
-    padding-bottom: 20px;
 }
 
