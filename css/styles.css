@@ -59,7 +59,12 @@ body{
 
 /* BLOQUE CONTENEDOR */
 .container{
-    
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 1.5px dotted rgb(248, 39, 39);*/
 }
 
 
@@ -85,11 +90,9 @@ body{
 /* HEADER */
 
 .section-1-header{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 80px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    display:flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #a5a1a15b;
 }
 
@@ -98,27 +101,38 @@ body{
 
 /* NAVEGATION BAR */
 
-nav{
+.linea{
     display: flex;
 }
 
 /* Webstudio */
 .web-studio{
-    margin-left: 145px;
     color: var(--blue-color);
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navegation-list{
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    margin-left: 93px;
 }
 
 .navegation-list>li {
     display: inline;
-    margin-left: 50px;
 }
 
 .navegation-links {
     font-size: 14px;
     font-weight: 500;
     color: var(--black-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 50px;
 }
 
 .navegation-links:hover,
@@ -132,15 +146,25 @@ nav{
     color: var(--blue-color);
 }
 
+.navegation-info{
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    margin-left: 200px;
+}
+
 .navegation-info>li {
     display: inline;
-    margin-right: 50px;
 }
 
 .navegation-info>li>a {
     font-size: 14px;
     font-weight: 500;
     color: var(--text-gray);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 50px;
 }
 
 .navegation-info>li>a:hover,
@@ -155,7 +179,6 @@ nav{
 /* FOOTER */
 
 .sec-footer {
-    padding-left: 215px;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--black-color);
@@ -189,6 +212,7 @@ nav{
 .sec-1{
     height: 600px;
     padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background-color: var(--black-color);
     color: aliceblue;
@@ -219,6 +243,7 @@ nav{
 .sec-2{
     display: flex;
     justify-content: center;
+    padding-top: 95px;
 }
 
 .list-about-us{
@@ -227,9 +252,9 @@ nav{
 
 .list-about-us>li{
     display: inline;
-    padding: 10px;
-    margin: 15px;
     width: 270px;
+    padding: 10px;
+    margin-left: 30px;
 }
 
 .list-about-us>li>h3 {
@@ -241,18 +266,19 @@ nav{
 .parrafos {
     line-height: 1.71;
     color: var(--text-gray);
+    margin-top: 10px;
 }
 
 .sec-3{
     text-align: center;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .titles-h2 {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 
@@ -293,6 +319,8 @@ nav{
     font-size: 16px;
     font-weight: 500;
     text-align: center;
+    padding-top: 30px;
+    margin-bottom: 10px;
 }
 
 .our-team-list>li>p {
@@ -300,6 +328,7 @@ nav{
     font-weight: 400;
     color: var(--text-gray);
     text-align: center;
+    padding-bottom: 30px;
 }
 
 
@@ -311,7 +340,7 @@ nav{
 .buttons-list{
     display: flex;
     justify-content: center;
-    padding-top: 106px;
+    padding-top: 112px;
 }
 
 .buttons-list>li {
@@ -339,10 +368,9 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding-top: 50px;
+    margin-top: 50px;
     padding-bottom: 82px;
-    padding-left: 215px;
-    padding-right: 215px;
+    
 }
 
 .img-services {
@@ -358,6 +386,8 @@ nav{
     font-weight: 700;
     text-align:left;
     margin-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 4px;
 }
 
 .services-list>li>p {
@@ -365,5 +395,6 @@ nav{
     color: var(--text-gray);
     text-align:left;
     margin-left: 24px;
+    padding-bottom: 20px;
 }
 
