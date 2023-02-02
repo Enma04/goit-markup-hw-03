@@ -126,7 +126,7 @@ nav{
     font-size: 14px;
     font-weight: 500;
     color: var(--black-color);
-    padding: 30px 0px;
+    padding: 38px 0px;
     margin-left: 50px;
 }
 
@@ -151,7 +151,7 @@ nav{
     font-size: 14px;
     font-weight: 500;
     color: var(--text-gray);
-    padding: 30px 0px;
+    padding: 38px 0px;
     margin-left: 50px;
 }
 
@@ -223,11 +223,12 @@ nav{
     font-family: inherit;
     font-size: 16px;
     font-weight: 700;
+    line-height: 1.9; /* 30px / 16px = 1.9 */
     background-color:var(--blue-color);
     color: aliceblue;
     border: none;
-    padding: 15px;
     border-radius: 4px;
+    padding: 10px 32px;
     margin-top: 30px;
 }
 
@@ -237,26 +238,23 @@ nav{
 
 .sec-2{
     display: flex;
-    justify-content: center;
     padding-top: 95px;
 }
 
 .list-about-us{
     display: flex;
-}
-
-.list-about-us>li{
-    display: inline;
-    width: 270px;
-    padding: 10px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .about-us-li{
-    margin-left: 30px;
+    /* calc((100% - numero_de_espacios * ancho de cada espacio)/numero_de_elementos) */
+    /* flex-basis: calc((100% - (3*30px)) / 4); */
+    /* flex-basis: calc((100% - 90) / 4); */
+    flex-basis: calc((100% - (3*30px)) / 4);
 }
 
 .list-about-us>li>h3 {
-    text-align: center;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -274,7 +272,6 @@ nav{
 }
 
 .titles-h2 {
-    text-align: center;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -282,11 +279,12 @@ nav{
 
 .img-list{
     display:flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 23px;
 }
 
 .img-list>li{
-    margin-left: 30px;
+    flex-basis: calc((100% - 46px)/3);
 }
 
 .img-list>li:first-child{
@@ -296,7 +294,6 @@ nav{
 .sec-4{
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: #F5F4FA;
 }
 
 .sec-4-h2{
@@ -308,17 +305,14 @@ nav{
 
 .our-team-list{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 37px;
 }
 
 .our-team-list>li{
-    margin-left: 37px;
+    flex-basis: calc((100% - 111px) / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
-
-.our-team-list>li:first-child{
-    margin-left: 0px;
 }
 
 .cont-our-team{
@@ -358,6 +352,7 @@ nav{
     padding: 6px 18px;
     font-size: 16px;
     font-weight: 500;
+    line-height: 1.6; /* 26px / 16px = 1.9 */
     font-family: inherit;
     cursor: pointer;
     border-radius: 4px;
@@ -382,7 +377,6 @@ nav{
 .img-services {
     max-width: 370px;
     box-sizing: border-box;
-    display: inline;
     flex-basis: calc((100% - 60px) / 3);
     border: 1px solid #EEEEEE;
 }
@@ -398,13 +392,11 @@ nav{
 .img-services-h3 {
     font-size: 18px;
     font-weight: 700;
-    text-align:left;
     margin-bottom: 5px;
 }
 
 .img-services-p {
     font-size: 16px;
     color: var(--text-gray);
-    text-align:left;
 }
 
